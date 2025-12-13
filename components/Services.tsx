@@ -4,35 +4,35 @@ import { motion } from 'framer-motion';
 const services = [
   {
     title: "Residential Roofing",
-    desc: "Expert installation and storm restoration using top-tier, impact-resistant materials designed for Oklahoma homes.",
+    desc: "New roof installations, storm damage repairs, and replacements. We use impact-resistant materials built to handle Oklahoma weather and work directly with your insurance company.",
     // Image: A clean shot of a pristine roof against a blue sky, emphasizing texture and quality.
-    image: "https://images.unsplash.com/photo-1623157585093-57529452097e?q=80&w=2070&auto=format&fit=crop"
+    image: "/assets/Residential Roofing.jpeg"
+  },
+  {
+    title: "Residential Gutters",
+    desc: "Seamless gutter installation and repair to protect your foundation from water damage. Properly installed gutters prevent costly foundation issues down the road.",
+    // Image: Clean, professional gutter installation on a residential home.
+    image: "/assets/Residential Gutters.jpeg"
   },
   {
     title: "Residential Solar",
-    desc: "Harness the abundant sun of the plains. We design integrated solar systems that lower energy independence and increase home value.",
+    desc: "Solar panel installation that integrates seamlessly with your roof. Lower your energy bills while increasing your home's value with clean, renewable energy.",
     // Image: Clear, modern solar panels installed on a residential roof.
-    image: "https://images.unsplash.com/photo-1624397640148-949b1732bb0a?q=80&w=1974&auto=format&fit=crop"
-  },
-  {
-    title: "Storm Restoration",
-    desc: "Fast, reliable repairs when you need them most. We handle the insurance process to restore your home's integrity quickly.",
-    // Image: Dramatic storm clouds, representing the severe weather reality of the region.
-    image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=2565&auto=format&fit=crop"
+    image: "/assets/Residential Solar.jpeg"
   }
 ];
 
 const Services: React.FC = () => {
   return (
-    <section className="py-16 px-4 md:px-10 bg-white">
+    <section id="services" className="py-16 px-4 md:px-10 bg-white dark:bg-background-dark transition-colors">
       <div className="max-w-[1200px] mx-auto">
-        <motion.h2 
-          className="font-display text-text-primary-light text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center"
+        <motion.h2
+          className="font-display text-text-primary-light dark:text-text-primary-dark text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Engineered for the Plains.
+          Complete Home Protection
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -53,10 +53,10 @@ const Services: React.FC = () => {
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
               </div>
               <div className="flex flex-col gap-2 px-1">
-                <h3 className="font-display text-xl font-medium leading-normal text-text-primary-light group-hover:text-primary-blue transition-colors">
+                <h3 className="font-display text-xl font-medium leading-normal text-text-primary-light dark:text-text-primary-dark group-hover:text-brand-gold transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-text-secondary-light text-sm font-normal leading-relaxed">
+                <p className="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-relaxed">
                   {service.desc}
                 </p>
               </div>

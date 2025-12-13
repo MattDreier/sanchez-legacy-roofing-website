@@ -1,24 +1,27 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import roofingImage from '/public/assets/Residential Roofing.jpeg';
+import guttersImage from '/public/assets/Residential Gutters.jpeg';
+import solarImage from '/public/assets/Residential Solar.jpeg';
 
 const services = [
   {
     title: "Residential Roofing",
     desc: "New roof installations, storm damage repairs, and replacements. We use impact-resistant materials built to handle Oklahoma weather and work directly with your insurance company.",
     // Image: A clean shot of a pristine roof against a blue sky, emphasizing texture and quality.
-    image: "/assets/Residential Roofing.jpeg"
+    image: roofingImage
   },
   {
     title: "Residential Gutters",
     desc: "Seamless gutter installation and repair to protect your foundation from water damage. Properly installed gutters prevent costly foundation issues down the road.",
     // Image: Clean, professional gutter installation on a residential home.
-    image: "/assets/Residential Gutters.jpeg"
+    image: guttersImage
   },
   {
     title: "Residential Solar",
     desc: "Solar panel installation that integrates seamlessly with your roof. Lower your energy bills while increasing your home's value with clean, renewable energy.",
     // Image: Clear, modern solar panels installed on a residential roof.
-    image: "/assets/Residential Solar.jpeg"
+    image: solarImage
   }
 ];
 

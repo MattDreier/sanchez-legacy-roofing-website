@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { Sun, Moon } from 'lucide-react';
+import logoImage from '/public/assets/Sanchez (2).png';
+import instagramIcon from '/public/assets/Sanchez (4).png';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -50,7 +52,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center z-50 relative">
             <img
-              src="/assets/Sanchez (2).png"
+              src={logoImage}
               alt="Sanchez Legacy Roofing"
               className="h-28 w-auto dark:invert transition-all"
             />
@@ -79,7 +81,7 @@ const Header: React.FC = () => {
               aria-label="Follow us on Instagram"
             >
               <img
-                src="/assets/Sanchez (4).png"
+                src={instagramIcon}
                 alt="Instagram"
                 className="h-8 w-8 invert dark:invert-0"
               />
@@ -107,7 +109,7 @@ const Header: React.FC = () => {
               aria-label="Follow us on Instagram"
             >
               <img
-                src="/assets/Sanchez (4).png"
+                src={instagramIcon}
                 alt="Instagram"
                 className="h-7 w-7 invert dark:invert-0"
               />

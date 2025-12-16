@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
             </motion.a>
 
             <motion.a
-              href="https://meetings.hubspot.com/mdreier1?uuid=7aeb267c-3c66-4836-80f8-c7e527b0d823"
+              href="https://calendar.app.google/omLYhDe3wkFxDJvM8"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-brand-gold-dark dark:text-brand-gold font-semibold px-4 py-3 group hover:text-brand-gold transition-colors"

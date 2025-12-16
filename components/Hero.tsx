@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
               className="flex items-center gap-2 text-brand-gold-dark dark:text-brand-gold font-semibold px-4 py-3 group hover:text-brand-gold transition-colors"
               whileHover={{ x: 5 }}
             >
-              Schedule a Free Assessment
+              Schedule a Free Inspection
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </motion.a>
           </div>

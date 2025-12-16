@@ -19,7 +19,7 @@ const CallToAction: React.FC = () => {
               Let's Get Started.
             </h2>
             <p className="text-lg text-text-secondary-light dark:text-text-secondary-dark">
-              Request your quote for pricing details, or schedule a free assessment and we'll guide you through every step.
+              Request your quote for pricing details, or schedule a free inspection and we'll guide you through every step.
             </p>
           </div>
 
@@ -43,7 +43,7 @@ const CallToAction: React.FC = () => {
               className="flex items-center gap-2 text-brand-gold-dark dark:text-brand-gold font-semibold px-4 py-3 group hover:text-brand-gold transition-colors"
               whileHover={{ x: 5 }}
             >
-              Schedule a Free Assessment
+              Schedule a Free Inspection
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </motion.a>
           </div>

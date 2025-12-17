@@ -93,7 +93,7 @@ const Hero: React.FC = () => {
         >
           <div
             className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-[2s] hover:scale-105"
-            style={{ backgroundImage: `url(${heroImage})` }}
+            style={{ backgroundImage: `url("${heroImage}")` }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none"></div>
           

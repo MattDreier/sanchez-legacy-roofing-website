@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import roofingImage from '/public/assets/Residential Roofing.jpeg';
-import guttersImage from '/public/assets/Residential Gutters.jpeg';
-import solarImage from '/public/assets/Residential Solar.jpeg';
+
+const roofingImage = '/assets/optimized/Residential Roofing.webp';
+const guttersImage = '/assets/optimized/Residential Gutters.webp';
+const solarImage = '/assets/optimized/Residential Solar.webp';
 
 const services = [
   {

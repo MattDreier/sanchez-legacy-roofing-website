@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, CheckCircle2, Shield, FileCheck, Award } from 'lucide-react';
-import heroImage from '/public/assets/Free damage inspections.jpeg';
+
+const heroImage = '/assets/optimized/Free damage inspections.webp';
 
 const offers = [
   {

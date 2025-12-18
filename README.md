@@ -1,20 +1,106 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Sanchez Legacy Roofing
 
-# Run and deploy your AI Studio app
+A production website for Sanchez Legacy Roofing built with React, TypeScript, and Vite. Deployed on GitHub Pages with a custom domain.
 
-This contains everything you need to run your app locally.
+🌐 **Live**: [sanchezlegacyroofing.com](https://sanchezlegacyroofing.com)
 
-View your app in AI Studio: https://ai.studio/apps/drive/1KJ2YYFyJXcOZ4JxRdVC6_-qHNs8cqXsj
+## Tech Stack
 
-## Run Locally
+- React 19 + TypeScript
+- Vite 6
+- Tailwind CSS 4
+- Framer Motion (animations)
+- GitHub Pages (hosting)
+- GitHub Actions (CI/CD)
 
-**Prerequisites:**  Node.js
+## Performance Optimizations
 
+- **Images**: Converted to WebP format with automated optimization pipeline (30-50% size reduction)
+- **Code Splitting**: Lazy loading and dynamic imports to reduce initial bundle size
+- **Fonts**: Async loading with `font-display: swap` to prevent render blocking
+- **Build**: Minification, tree shaking, and optimized chunk splitting via Vite
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+**Core Web Vitals targets:**
+- LCP < 2.5s
+- FID < 100ms
+- CLS < 0.1
+
+## Local Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start dev server (http://localhost:5173)
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+### Available Scripts
+
+- `npm run optimize-images` - Convert and optimize images to WebP
+- `npm run generate-icons` - Generate favicon variations
+
+## Project Structure
+
+```
+├── components/          # React components
+│   ├── Header.tsx
+│   ├── Hero.tsx
+│   ├── Services.tsx
+│   ├── Features.tsx
+│   ├── Testimonials.tsx
+│   ├── CallToAction.tsx
+│   └── Footer.tsx
+├── public/
+│   ├── assets/         # Optimized images
+│   └── CNAME          # Custom domain config
+├── scripts/
+│   ├── optimize-images.js
+│   └── generate-icons.js
+├── App.tsx
+├── index.tsx
+└── vite.config.ts
+```
+
+## Deployment
+
+Automatically deploys to GitHub Pages on push to `main` via GitHub Actions.
+
+### Custom Domain Setup
+
+**DNS Configuration (GoDaddy):**
+
+A Records for apex domain:
+```
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+```
+
+CNAME for www subdomain:
+```
+www → sanchezlegacyroofing.com
+```
+
+**GitHub Pages:**
+- Custom domain: `sanchezlegacyroofing.com`
+- HTTPS enforced (Let's Encrypt)
+- Build source: GitHub Actions
+
+## Browser Support
+
+- Chrome/Edge (last 2 versions)
+- Firefox (last 2 versions)
+- Safari (last 2 versions)
+- Mobile browsers (iOS Safari, Chrome Android)
+
+## License
+
+© 2024 Sanchez Legacy Roofing. All rights reserved.
